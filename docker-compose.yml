@@ -1,35 +1,11 @@
-version: '3.8'
-
 services:
-  portfolio:
-    container_name: dsa-app
+  app:
     build: .
-    expose:
-      - "80"
-    restart: unless-stopped
-    environment:
-      - VITE_EMAILJS_SERVICE_ID=${VITE_EMAILJS_SERVICE_ID}
-      - VITE_EMAILJS_TEMPLATE_ID=${VITE_EMAILJS_TEMPLATE_ID}
-      - VITE_EMAILJS_PUBLIC_KEY=${VITE_EMAILJS_PUBLIC_KEY}
-    env_file:
-      - .env
-
-  caddy:
-    image: caddy:2-alpine
-    container_name: caddy
     ports:
-      - "80:80"
-      - "443:443"
+      - "5137:5137"
     volumes:
-      - ./caddy/Caddyfile:/etc/caddy/Caddyfile
-      - caddy_data:/data
-      - caddy_config:/config
-    restart: unless-stopped
-    depends_on:
-      - dsa-app
-
-volumes:
-  caddy_data:
-    external: true
-  caddy_config:
-    external: true
+      - .:/app
+      - /app/node_modules
+    environment:
+      - NODE_ENV=development
+    command: npm run dev -- --host 
