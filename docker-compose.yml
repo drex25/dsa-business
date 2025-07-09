@@ -1,6 +1,10 @@
+version: '3.8'
+
 services:
   app:
-    build: .
+    build: 
+      context: .
+      dockerfile: Dockerfile
     ports:
       - "5137:5137"
     volumes:
@@ -8,4 +12,12 @@ services:
       - /app/node_modules
     environment:
       - NODE_ENV=development
-    command: npm run dev 
+      - CHOKIDAR_USEPOLLING=true
+    command: npm run dev
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:5137"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s 
