@@ -1,8 +1,8 @@
-# Use Node.js LTS version
-FROM node:20-alpine
+# Use Node.js LTS version from a different registry
+FROM node:20-slim
 
 # Install curl for healthcheck
-RUN apk add --no-cache curl
+RUN apt-get update && apt-get install -y curl && rm -rf /var/lib/apt/lists/*
 
 # Set the working directory
 WORKDIR /app
