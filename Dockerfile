@@ -1,8 +1,5 @@
-# Use Node.js LTS version from a different registry
-FROM node:20-slim
-
-# Install curl for healthcheck
-RUN apt-get update && apt-get install -y curl && rm -rf /var/lib/apt/lists/*
+# Use Node.js LTS version
+FROM node:18-alpine AS build
 
 # Set the working directory
 WORKDIR /app
@@ -11,7 +8,7 @@ WORKDIR /app
 COPY package*.json ./
 
 # Install dependencies
-RUN npm ci --only=production
+RUN npm install 
 
 # Copy the rest of the application code
 COPY . .
