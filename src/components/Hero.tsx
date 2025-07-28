@@ -49,38 +49,6 @@ const Hero: React.FC = () => {
                 ))}
               </div>
 
-              {/* Mini Formulario */}
-              <div className="bg-white/10 backdrop-blur-md rounded-2xl p-6 border border-white/20 mb-8">
-                <h3 className="text-xl font-semibold text-white mb-4 text-center">
-                  ¿Querés que analicemos tu caso?
-                </h3>
-                <form className="space-y-4">
-                  <div className="grid sm:grid-cols-3 gap-4">
-                    <input
-                      type="text"
-                      placeholder="Tu nombre"
-                      className="px-4 py-3 rounded-xl bg-white/20 border border-white/30 text-white placeholder-white/70 focus:ring-2 focus:ring-blue-400 focus:border-transparent backdrop-blur-sm"
-                    />
-                    <input
-                      type="email"
-                      placeholder="tu@email.com"
-                      className="px-4 py-3 rounded-xl bg-white/20 border border-white/30 text-white placeholder-white/70 focus:ring-2 focus:ring-blue-400 focus:border-transparent backdrop-blur-sm"
-                    />
-                    <input
-                      type="url"
-                      placeholder="tuweb.com"
-                      className="px-4 py-3 rounded-xl bg-white/20 border border-white/30 text-white placeholder-white/70 focus:ring-2 focus:ring-blue-400 focus:border-transparent backdrop-blur-sm"
-                    />
-                  </div>
-                  <button
-                    type="submit"
-                    className="w-full px-6 py-3 bg-gradient-to-r from-emerald-500 to-teal-500 text-white font-semibold rounded-xl hover:from-emerald-600 hover:to-teal-600 transform hover:scale-105 transition-all duration-200 shadow-lg hover:shadow-xl"
-                  >
-                    Pedí tu diagnóstico ahora
-                  </button>
-                </form>
-              </div>
-
               {/* CTA Buttons */}
               <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
                 <button className="group inline-flex items-center justify-center px-8 py-4 bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-semibold rounded-xl hover:from-blue-700 hover:to-indigo-700 transform hover:scale-105 transition-all duration-200 shadow-lg hover:shadow-xl">
