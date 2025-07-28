@@ -40,11 +40,13 @@ const Hero: React.FC = () => {
               </p>
 
               {/* Benefits */}
-              <div className="flex flex-col sm:flex-row sm:space-x-8 space-y-4 sm:space-y-0 mb-10">
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-10">
                 {benefits.map((benefit, index) => (
-                  <a key={index} href={benefit.link} className="flex items-center space-x-3 hover:text-blue-300 transition-colors duration-200 group">
-                    <benefit.icon className="w-5 h-5 text-emerald-400 flex-shrink-0" />
-                    <span className="text-slate-300 font-medium group-hover:text-blue-300">{benefit.text}</span>
+                  <a key={index} href={benefit.link} className="flex flex-col items-center text-center p-4 rounded-2xl bg-white/5 border border-white/10 hover:bg-white/10 hover:border-white/20 transition-all duration-300 group backdrop-blur-sm">
+                    <div className="p-4 rounded-full bg-gradient-to-r from-emerald-400 to-teal-400 mb-3 group-hover:scale-110 transition-transform duration-300 shadow-lg">
+                      <benefit.icon className="w-8 h-8 text-white" />
+                    </div>
+                    <span className="text-slate-200 font-semibold text-sm group-hover:text-white transition-colors duration-200">{benefit.text}</span>
                   </a>
                 ))}
               </div>
