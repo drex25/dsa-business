@@ -9,7 +9,7 @@ const Services: React.FC = () => {
       icon: Search,
       title: 'Diagnóstico DSA360',
       subtitle: 'Análisis completo de tu negocio digital',
-      description: 'Evaluamos tu presencia digital, competencia, oportunidades y definimos la estrategia perfecta para tu crecimiento.',
+      description: 'Evaluamos tu situación actual, competencia, oportunidades y definimos la estrategia perfecta para tu crecimiento.',
       features: ['Auditoría completa', 'Análisis de competencia', 'Plan estratégico', 'Roadmap personalizado'],
       forWho: 'Emprendedores y empresas que quieren entender su posicionamiento digital',
       result: 'Estrategia clara y plan de acción para los próximos 6-12 meses',
