@@ -42,7 +42,7 @@ const Services: React.FC = () => {
       icon: Package,
       title: 'Packs Combinados',
       subtitle: 'Soluciones integrales para máximo impacto',
-      description: 'Combinamos servicios para crear ecosistemas digitales completos que potencian tu crecimiento.',
+      description: 'Combinamos servicios para crear ecosistemas completos que potencian tu crecimiento.',
       features: ['Diagnóstico + Implementación', 'Estrategia + Ejecución', 'Web + Marketing', 'Soporte continuo'],
       forWho: 'Negocios que buscan transformación completa',
       result: 'Ecosistema que trabaja 24/7 para tu negocio',
