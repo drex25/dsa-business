@@ -43,9 +43,9 @@ const Services: React.FC = () => {
       title: 'Packs Combinados',
       subtitle: 'Soluciones integrales para máximo impacto',
       description: 'Combinamos servicios para crear ecosistemas digitales completos que potencian tu crecimiento.',
-      features: ['Web + Marketing', 'Diagnóstico + Implementación', 'Estrategia + Ejecución', 'Soporte continuo'],
+      features: ['Diagnóstico + Implementación', 'Estrategia + Ejecución', 'Web + Marketing', 'Soporte continuo'],
       forWho: 'Negocios que buscan transformación digital completa',
-      result: 'Ecosistema digital que trabaja 24/7 para tu negocio',
+      result: 'Ecosistema que trabaja 24/7 para tu negocio',
       price: 'Consultar pack personalizado',
       color: 'indigo'
     },

@@ -73,16 +73,18 @@ const About: React.FC = () => {
             </h3>
             <div className="space-y-4 text-lg text-slate-700 leading-relaxed">
               <p>
-                DSA Business nació en 2019 de una simple observación: demasiados negocios gastaban 
-                tiempo y dinero en marketing digital sin resultados claros.
+                DSA Business nació de una simple observación: demasiados negocios no conocen su situación actual, 
+                falta de orden en sus finanzas y falta de planificación estratégica para crecer de forma ordenada.
               </p>
               <p>
                 Decidimos cambiar eso. Creamos una metodología que va <strong>del análisis a la acción</strong>, 
-                donde cada estrategia se basa en datos reales y cada implementación se mide con métricas concretas.
+                con el Método DSA360 donde cada módulo permite entender y acompañamos con estrategias adecuadas 
+                basados en datos reales y cada implementación se mide.
               </p>
               <p>
-                Hoy, después de ayudar a más de 150 empresas a crecer digitalmente, seguimos con la 
-                misma pasión del primer día: transformar negocios a través del poder del marketing digital inteligente.
+                Hoy ayudamos a emprendedores y empresas a crecer, con la misma pasión de contribuir al éxito: 
+                transformamos negocios a través del poder del diagnóstico como primer paso, implementando 
+                estrategias para lograr resultados y brindamos soportes innovadores para crecer en ventas.
               </p>
             </div>
           </div>
