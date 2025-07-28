@@ -61,10 +61,7 @@ const Header: React.FC<HeaderProps> = ({ activeSection, setActiveSection }) => {
           <div className="hidden md:flex items-center space-x-4">
             <button className="flex items-center space-x-2 px-4 py-2 text-sm font-medium text-slate-700 hover:text-blue-600 transition-colors duration-200">
               <Phone className="w-4 h-4" />
-              <span>+54 11 1234-5678</span>
-            </button>
-            <button className="flex items-center space-x-2 px-6 py-2 bg-gradient-to-r from-blue-600 to-indigo-600 text-white rounded-lg font-medium hover:from-blue-700 hover:to-indigo-700 transform hover:scale-105 transition-all duration-200 shadow-lg hover:shadow-xl">
-              <span>Ingresar</span>
+              <span>+595 986 973844</span>
             </button>
           </div>
 
@@ -99,10 +96,7 @@ const Header: React.FC<HeaderProps> = ({ activeSection, setActiveSection }) => {
               <div className="pt-4 space-y-2">
                 <button className="flex items-center space-x-2 w-full px-3 py-2 text-sm font-medium text-slate-700 hover:text-blue-600 transition-colors duration-200">
                   <Phone className="w-4 h-4" />
-                  <span>+54 11 1234-5678</span>
-                </button>
-                <button className="flex items-center justify-center space-x-2 w-full px-4 py-2 bg-gradient-to-r from-blue-600 to-indigo-600 text-white rounded-lg font-medium hover:from-blue-700 hover:to-indigo-700 transition-all duration-200">
-                  <span>Ingresar</span>
+                  <span>+595 986 973844</span>
                 </button>
               </div>
             </div>

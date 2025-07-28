@@ -64,7 +64,7 @@ const Contact: React.FC = () => {
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <button className="inline-flex items-center space-x-2 px-6 py-3 bg-green-600 text-white font-medium rounded-xl hover:bg-green-700 transition-colors duration-200">
                   <MessageCircle className="w-5 h-5" />
-                  <span>WhatsApp: +54 11 1234-5678</span>
+                  <span>WhatsApp: +595 986 973844</span>
                 </button>
                 <button className="inline-flex items-center space-x-2 px-6 py-3 bg-blue-600 text-white font-medium rounded-xl hover:bg-blue-700 transition-colors duration-200">
                   <Calendar className="w-5 h-5" />
@@ -114,7 +114,7 @@ const Contact: React.FC = () => {
                   </div>
                   <div>
                     <h4 className="font-semibold mb-1">Teléfono / WhatsApp</h4>
-                    <p className="text-slate-300">+54 11 1234-5678</p>
+                    <p className="text-slate-300">+595 986 973844</p>
                     <p className="text-sm text-slate-400">Lun a Vie: 9:00 - 18:00 hs</p>
                   </div>
                 </div>
