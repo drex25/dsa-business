@@ -97,30 +97,79 @@ const Hero: React.FC = () => {
           {/* Hero Image/Graphic */}
           <div className="lg:col-span-5 mt-12 lg:mt-0">
             <div className="relative">
-              {/* Floating Cards */}
-              <div className="relative z-10 space-y-4">
-                <div className="bg-white/10 backdrop-blur-md rounded-2xl p-6 border border-white/20 transform rotate-3 hover:rotate-0 transition-transform duration-300">
-                  <div className="flex items-center space-x-3 mb-3">
-                    <Search className="w-6 h-6 text-emerald-400" />
-                    <span className="text-white font-semibold">Diagnóstico DSA360</span>
+              {/* Formulario Principal */}
+              <div className="relative z-10">
+                <div className="bg-white/10 backdrop-blur-md rounded-3xl p-8 border border-white/20 shadow-2xl">
+                  <div className="text-center mb-8">
+                    <h3 className="text-2xl font-bold text-white mb-3">
+                      ¿Querés que analicemos tu caso?
+                    </h3>
+                    <p className="text-slate-300">
+                      Completá estos datos y te enviamos un diagnóstico personalizado
+                    </p>
                   </div>
-                  <p className="text-slate-300 text-sm">Análisis completo de tu presencia digital</p>
-                </div>
-                
-                <div className="bg-white/10 backdrop-blur-md rounded-2xl p-6 border border-white/20 transform -rotate-2 hover:rotate-0 transition-transform duration-300 ml-8">
-                  <div className="flex items-center space-x-3 mb-3">
-                    <Globe className="w-6 h-6 text-blue-400" />
-                    <span className="text-white font-semibold">Desarrollo Web</span>
+                  
+                  <form className="space-y-6">
+                    <div>
+                      <label className="block text-sm font-medium text-white mb-2">
+                        Nombre completo
+                      </label>
+                      <input
+                        type="text"
+                        placeholder="Tu nombre"
+                        className="w-full px-4 py-3 rounded-xl bg-white/20 border border-white/30 text-white placeholder-white/70 focus:ring-2 focus:ring-emerald-400 focus:border-transparent backdrop-blur-sm transition-all duration-200"
+                      />
+                    </div>
+                    
+                    <div>
+                      <label className="block text-sm font-medium text-white mb-2">
+                        Email
+                      </label>
+                      <input
+                        type="email"
+                        placeholder="tu@email.com"
+                        className="w-full px-4 py-3 rounded-xl bg-white/20 border border-white/30 text-white placeholder-white/70 focus:ring-2 focus:ring-emerald-400 focus:border-transparent backdrop-blur-sm transition-all duration-200"
+                      />
+                    </div>
+                    
+                    <div>
+                      <label className="block text-sm font-medium text-white mb-2">
+                        Sitio web (opcional)
+                      </label>
+                      <input
+                        type="url"
+                        placeholder="www.tuweb.com"
+                        className="w-full px-4 py-3 rounded-xl bg-white/20 border border-white/30 text-white placeholder-white/70 focus:ring-2 focus:ring-emerald-400 focus:border-transparent backdrop-blur-sm transition-all duration-200"
+                      />
+                    </div>
+                    
+                    <div>
+                      <label className="block text-sm font-medium text-white mb-2">
+                        ¿Cuál es tu principal desafío?
+                      </label>
+                      <select className="w-full px-4 py-3 rounded-xl bg-white/20 border border-white/30 text-white focus:ring-2 focus:ring-emerald-400 focus:border-transparent backdrop-blur-sm transition-all duration-200">
+                        <option value="" className="text-slate-900">Seleccionar desafío</option>
+                        <option value="leads" className="text-slate-900">Generar más leads</option>
+                        <option value="ventas" className="text-slate-900">Aumentar ventas online</option>
+                        <option value="web" className="text-slate-900">Mejorar mi sitio web</option>
+                        <option value="publicidad" className="text-slate-900">Optimizar publicidad</option>
+                        <option value="otro" className="text-slate-900">Otro</option>
+                      </select>
+                    </div>
+                    
+                    <button
+                      type="submit"
+                      className="w-full px-6 py-4 bg-gradient-to-r from-emerald-500 to-teal-500 text-white font-semibold rounded-xl hover:from-emerald-600 hover:to-teal-600 transform hover:scale-105 transition-all duration-200 shadow-lg hover:shadow-xl"
+                    >
+                      Pedí tu diagnóstico ahora
+                    </button>
+                  </form>
+                  
+                  <div className="mt-6 text-center">
+                    <p className="text-sm text-slate-300">
+                      ✓ Análisis gratuito ✓ Sin compromiso ✓ Respuesta en 24hs
+                    </p>
                   </div>
-                  <p className="text-slate-300 text-sm">Sitios que convierten visitantes en clientes</p>
-                </div>
-                
-                <div className="bg-white/10 backdrop-blur-md rounded-2xl p-6 border border-white/20 transform rotate-1 hover:rotate-0 transition-transform duration-300">
-                  <div className="flex items-center space-x-3 mb-3">
-                    <BarChart3 className="w-6 h-6 text-purple-400" />
-                    <span className="text-white font-semibold">Marketing de Rendimiento</span>
-                  </div>
-                  <p className="text-slate-300 text-sm">Publicidad que genera ROI comprobable</p>
                 </div>
               </div>
 
