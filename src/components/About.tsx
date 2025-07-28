@@ -4,22 +4,22 @@ import { Users, Target, Award, Globe, Heart, Zap } from 'lucide-react';
 const About: React.FC = () => {
   const team = [
     {
-      name: 'Diego Sánchez',
-      role: 'CEO & Estratega Digital',
+      name: 'Diego Alvarenga',
+      role: 'CEO - Estratega de negocios',
       image: 'https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=400',
-      bio: 'Especialista en transformación digital con +8 años ayudando a empresas a crecer online.'
+      bio: 'Lic. en Administración + MBA. Experto en diagnóstico empresarial, planificación estratégica y desarrollo comercial'
     },
     {
-      name: 'Ana Torres',
-      role: 'Directora de Performance',
-      image: 'https://images.pexels.com/photos/3756679/pexels-photo-3756679.jpeg?auto=compress&cs=tinysrgb&w=400',
-      bio: 'Experta en paid media y optimización de campañas con ROI comprobado en +200 proyectos.'
-    },
-    {
-      name: 'Santiago López',
-      role: 'Lead Developer',
+      name: 'Drex',
+      role: 'Desarrollador Fullstack',
       image: 'https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=400',
-      bio: 'Desarrollador full-stack especializado en e-commerce y aplicaciones de alto rendimiento.'
+      bio: 'Portfolio tech sólido. Responsable de convertir ideas en plataformas digitales funcionales y escalables.'
+    },
+    {
+      name: 'Romina Alvarenga',
+      role: 'Especialista en Paid Media & Performance',
+      image: 'https://images.pexels.com/photos/3756679/pexels-photo-3756679.jpeg?auto=compress&cs=tinysrgb&w=400',
+      bio: 'Mente analítica y creativa. Optimiza campañas para convertir visitas en resultados medibles.'
     }
   ];
 
