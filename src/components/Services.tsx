@@ -8,7 +8,7 @@ const Services: React.FC = () => {
     {
       icon: Search,
       title: 'Diagnóstico DSA360',
-      subtitle: 'Análisis completo de tu negocio digital',
+      subtitle: 'Análisis completo de tu negocio',
       description: 'Evaluamos tu situación actual, competencia, oportunidades y definimos la estrategia perfecta para tu crecimiento.',
       features: ['Auditoría completa', 'Análisis de competencia', 'Plan estratégico', 'Roadmap personalizado'],
       forWho: 'Emprendedores y empresas que quieren entender su posicionamiento digital',
@@ -44,7 +44,7 @@ const Services: React.FC = () => {
       subtitle: 'Soluciones integrales para máximo impacto',
       description: 'Combinamos servicios para crear ecosistemas digitales completos que potencian tu crecimiento.',
       features: ['Diagnóstico + Implementación', 'Estrategia + Ejecución', 'Web + Marketing', 'Soporte continuo'],
-      forWho: 'Negocios que buscan transformación digital completa',
+      forWho: 'Negocios que buscan transformación completa',
       result: 'Ecosistema que trabaja 24/7 para tu negocio',
       price: 'Consultar pack personalizado',
       color: 'indigo'
