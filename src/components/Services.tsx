@@ -115,8 +115,7 @@ const Services: React.FC = () => {
             </span>
           </h2>
           <p className="text-xl text-slate-600 max-w-3xl mx-auto">
-            Desde el diagnóstico hasta la implementación, te acompañamos en cada etapa 
-            de tu crecimiento digital con soluciones probadas y resultados medibles.
+            Desde el diagnóstico hasta la implementación, te acompañamos en cada etapa de tu crecimiento con soluciones probadas y resultados medibles.
           </p>
         </div>
 
