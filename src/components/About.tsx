@@ -10,7 +10,7 @@ const About: React.FC = () => {
       bio: 'Lic. en Administración + MBA. Experto en diagnóstico empresarial, planificación estratégica y desarrollo comercial'
     },
     {
-      name: 'Drex',
+      name: 'Sylvain Drexler W.',
       role: 'Desarrollador Fullstack',
       image: 'https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=400',
       bio: 'Portfolio tech sólido. Responsable de convertir ideas en plataformas digitales funcionales y escalables.'
