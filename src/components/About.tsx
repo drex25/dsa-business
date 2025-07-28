@@ -42,8 +42,8 @@ const About: React.FC = () => {
   ];
 
   const stats = [
-    { number: '80+', label: 'Proyectos completados' },
-    { number: '90%', label: 'Clientes satisfechos' },
+    { number: '40+', label: 'Proyectos completados' },
+    { number: '99%', label: 'Clientes satisfechos' },
     { number: '3 años', label: 'En el mercado' },
     { number: '6 países', label: 'Alcance regional' }
   ];
@@ -60,7 +60,7 @@ const About: React.FC = () => {
             </span>
           </h2>
           <p className="text-xl text-slate-600 max-w-3xl mx-auto">
-            Somos un equipo de especialistas apasionados por transformar ideas en resultados digitales concretos. 
+            Somos un equipo de especialistas apasionados por transformar ideas en resultados. 
             Creemos que cada negocio tiene potencial de crecimiento, solo necesita la estrategia correcta.
           </p>
         </div>
@@ -73,16 +73,13 @@ const About: React.FC = () => {
             </h3>
             <div className="space-y-4 text-lg text-slate-700 leading-relaxed">
               <p>
-                DSA Business nació en 2019 de una simple observación: demasiados negocios gastaban 
-                tiempo y dinero en marketing digital sin resultados claros.
+                DSA Business nació de una simple observación: demasiados negocios no conocen su situación actual, falta de orden en sus finanzas y falta de planificación estratégica para crecer de forma ordenada.
               </p>
               <p>
-                Decidimos cambiar eso. Creamos una metodología que va <strong>del análisis a la acción</strong>, 
-                donde cada estrategia se basa en datos reales y cada implementación se mide con métricas concretas.
+                Decidimos cambiar eso. Creamos una metodología que va <strong>del análisis a la acción</strong>, con el Método DSA360 donde cada modulo permite entender y acompañamos con estrategias adecuadas basados en datos reales y cada implementación se mide.
               </p>
               <p>
-                Hoy, después de ayudar a más de 150 empresas a crecer digitalmente, seguimos con la 
-                misma pasión del primer día: transformar negocios a través del poder del marketing digital inteligente.
+                Hoy ayudamos a emprendedores y empresas a crecer, con la misma pasión de contribuir al éxito: transformamos negocios a través del poder del diagnóstico como primer paso, implementando estrategias para lograr resultados y brindamos soportes innovadores para crecer en ventas.
               </p>
             </div>
           </div>
