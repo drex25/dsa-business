@@ -10,8 +10,8 @@ const Header: React.FC<HeaderProps> = ({ activeSection, setActiveSection }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navigation = [
-    { name: 'Nosotros', href: 'about' },
     { name: 'Servicios', href: 'services' },
+    { name: 'Nosotros', href: 'about' },
     { name: 'Casos de Éxito', href: 'testimonials' },
     { name: 'Blog', href: 'blog' },
     { name: 'Contacto', href: 'contact' },
