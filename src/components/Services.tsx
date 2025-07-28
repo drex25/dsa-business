@@ -10,7 +10,7 @@ const Services: React.FC = () => {
       title: 'Diagnóstico DSA360',
       subtitle: 'Análisis completo de tu negocio',
       description: 'Evaluamos tu situación actual, competencia, oportunidades y definimos la estrategia perfecta para tu crecimiento.',
-      features: ['Análisis Integral', 'Plan estratégico', 'Roadmap personalizado'],
+      features: ['Análisis Integral', 'Plan estratégico'],
       forWho: 'Emprendedores y empresas que quieren entender dónde están parados antes de dar el siguiente paso',
       result: 'Estrategia clara y plan de acción para los próximos 6-12 meses',
       price: 'Desde $50.000',
