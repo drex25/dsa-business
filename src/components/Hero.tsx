@@ -1,11 +1,11 @@
 import React from 'react';
-import { ArrowRight, CheckCircle, TrendingUp, Globe, Target } from 'lucide-react';
+import { ArrowRight, CheckCircle, TrendingUp, Globe, Target, Search, BarChart3, DollarSign } from 'lucide-react';
 
 const Hero: React.FC = () => {
   const benefits = [
-    { icon: CheckCircle, text: 'Diagnóstico real y profundo' },
-    { icon: Globe, text: 'Webs funcionales que convierten' },
-    { icon: TrendingUp, text: 'Publicidad que genera ROI real' },
+    { icon: Search, text: 'Diagnóstico real', link: '#diagnostico' },
+    { icon: Globe, text: 'Webs funcionales', link: '#web' },
+    { icon: DollarSign, text: 'Publicidad que convierte $$$', link: '#publicidad' },
   ];
 
   return (
@@ -27,32 +27,64 @@ const Hero: React.FC = () => {
               {/* Main Headline */}
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
                 <span className="block">Estrategia, desarrollo</span>
-                <span className="block">y performance para</span>
+                <span className="block">y rendimiento para</span>
                 <span className="block bg-gradient-to-r from-blue-400 to-emerald-400 bg-clip-text text-transparent">
-                  negocios que quieren crecer en serio
+                  negocios que apuestan al crecimiento con resultados medibles
                 </span>
               </h1>
 
               {/* Subtitle */}
               <p className="text-xl text-slate-300 mb-8 max-w-2xl">
-                Transformamos ideas en resultados medibles. Desde el diagnóstico hasta la ejecución, 
-                te acompañamos en cada paso hacia el crecimiento digital de tu negocio.
+                Desde un diagnóstico profundo hasta la ejecución de estrategias de alto impacto, 
+                te acompañamos en cada etapa de tu crecimiento.
               </p>
 
               {/* Benefits */}
               <div className="flex flex-col sm:flex-row sm:space-x-8 space-y-4 sm:space-y-0 mb-10">
                 {benefits.map((benefit, index) => (
-                  <div key={index} className="flex items-center space-x-3">
+                  <a key={index} href={benefit.link} className="flex items-center space-x-3 hover:text-blue-300 transition-colors duration-200 group">
                     <benefit.icon className="w-5 h-5 text-emerald-400 flex-shrink-0" />
-                    <span className="text-slate-300 font-medium">{benefit.text}</span>
-                  </div>
+                    <span className="text-slate-300 font-medium group-hover:text-blue-300">{benefit.text}</span>
+                  </a>
                 ))}
+              </div>
+
+              {/* Mini Formulario */}
+              <div className="bg-white/10 backdrop-blur-md rounded-2xl p-6 border border-white/20 mb-8">
+                <h3 className="text-xl font-semibold text-white mb-4 text-center">
+                  ¿Querés que analicemos tu caso?
+                </h3>
+                <form className="space-y-4">
+                  <div className="grid sm:grid-cols-3 gap-4">
+                    <input
+                      type="text"
+                      placeholder="Tu nombre"
+                      className="px-4 py-3 rounded-xl bg-white/20 border border-white/30 text-white placeholder-white/70 focus:ring-2 focus:ring-blue-400 focus:border-transparent backdrop-blur-sm"
+                    />
+                    <input
+                      type="email"
+                      placeholder="tu@email.com"
+                      className="px-4 py-3 rounded-xl bg-white/20 border border-white/30 text-white placeholder-white/70 focus:ring-2 focus:ring-blue-400 focus:border-transparent backdrop-blur-sm"
+                    />
+                    <input
+                      type="url"
+                      placeholder="tuweb.com"
+                      className="px-4 py-3 rounded-xl bg-white/20 border border-white/30 text-white placeholder-white/70 focus:ring-2 focus:ring-blue-400 focus:border-transparent backdrop-blur-sm"
+                    />
+                  </div>
+                  <button
+                    type="submit"
+                    className="w-full px-6 py-3 bg-gradient-to-r from-emerald-500 to-teal-500 text-white font-semibold rounded-xl hover:from-emerald-600 hover:to-teal-600 transform hover:scale-105 transition-all duration-200 shadow-lg hover:shadow-xl"
+                  >
+                    Pedí tu diagnóstico ahora
+                  </button>
+                </form>
               </div>
 
               {/* CTA Buttons */}
               <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
                 <button className="group inline-flex items-center justify-center px-8 py-4 bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-semibold rounded-xl hover:from-blue-700 hover:to-indigo-700 transform hover:scale-105 transition-all duration-200 shadow-lg hover:shadow-xl">
-                  <span>Pedí tu diagnóstico GRATIS</span>
+                  <span>Ver casos de éxito</span>
                   <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform duration-200" />
                 </button>
                 <button className="inline-flex items-center justify-center px-8 py-4 border-2 border-white/20 text-white font-semibold rounded-xl hover:bg-white/10 hover:border-white/30 backdrop-blur-sm transition-all duration-200">
@@ -69,7 +101,7 @@ const Hero: React.FC = () => {
               <div className="relative z-10 space-y-4">
                 <div className="bg-white/10 backdrop-blur-md rounded-2xl p-6 border border-white/20 transform rotate-3 hover:rotate-0 transition-transform duration-300">
                   <div className="flex items-center space-x-3 mb-3">
-                    <div className="w-3 h-3 bg-emerald-400 rounded-full"></div>
+                    <Search className="w-6 h-6 text-emerald-400" />
                     <span className="text-white font-semibold">Diagnóstico DSA360</span>
                   </div>
                   <p className="text-slate-300 text-sm">Análisis completo de tu presencia digital</p>
@@ -77,7 +109,7 @@ const Hero: React.FC = () => {
                 
                 <div className="bg-white/10 backdrop-blur-md rounded-2xl p-6 border border-white/20 transform -rotate-2 hover:rotate-0 transition-transform duration-300 ml-8">
                   <div className="flex items-center space-x-3 mb-3">
-                    <div className="w-3 h-3 bg-blue-400 rounded-full"></div>
+                    <Globe className="w-6 h-6 text-blue-400" />
                     <span className="text-white font-semibold">Desarrollo Web</span>
                   </div>
                   <p className="text-slate-300 text-sm">Sitios que convierten visitantes en clientes</p>
@@ -85,8 +117,8 @@ const Hero: React.FC = () => {
                 
                 <div className="bg-white/10 backdrop-blur-md rounded-2xl p-6 border border-white/20 transform rotate-1 hover:rotate-0 transition-transform duration-300">
                   <div className="flex items-center space-x-3 mb-3">
-                    <div className="w-3 h-3 bg-purple-400 rounded-full"></div>
-                    <span className="text-white font-semibold">Paid Media</span>
+                    <BarChart3 className="w-6 h-6 text-purple-400" />
+                    <span className="text-white font-semibold">Marketing de Rendimiento</span>
                   </div>
                   <p className="text-slate-300 text-sm">Publicidad que genera ROI comprobable</p>
                 </div>

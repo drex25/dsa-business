@@ -10,14 +10,10 @@ const Header: React.FC<HeaderProps> = ({ activeSection, setActiveSection }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navigation = [
-    { name: 'Inicio', href: 'home' },
-    { name: 'Servicios', href: 'services' },
     { name: 'Nosotros', href: 'about' },
-    { name: 'Packs', href: 'packages' },
-    { name: 'Casos', href: 'testimonials' },
+    { name: 'Servicios', href: 'services' },
+    { name: 'Casos de Éxito', href: 'testimonials' },
     { name: 'Blog', href: 'blog' },
-    { name: 'Suscripciones', href: 'subscriptions' },
-    { name: 'Funcionalidades', href: 'advanced-features' },
     { name: 'Contacto', href: 'contact' },
   ];
 
@@ -68,8 +64,7 @@ const Header: React.FC<HeaderProps> = ({ activeSection, setActiveSection }) => {
               <span>+54 11 1234-5678</span>
             </button>
             <button className="flex items-center space-x-2 px-6 py-2 bg-gradient-to-r from-blue-600 to-indigo-600 text-white rounded-lg font-medium hover:from-blue-700 hover:to-indigo-700 transform hover:scale-105 transition-all duration-200 shadow-lg hover:shadow-xl">
-              <Calendar className="w-4 h-4" />
-              <span>Agendar Llamada</span>
+              <span>Ingresar</span>
             </button>
           </div>
 
@@ -107,8 +102,7 @@ const Header: React.FC<HeaderProps> = ({ activeSection, setActiveSection }) => {
                   <span>+54 11 1234-5678</span>
                 </button>
                 <button className="flex items-center justify-center space-x-2 w-full px-4 py-2 bg-gradient-to-r from-blue-600 to-indigo-600 text-white rounded-lg font-medium hover:from-blue-700 hover:to-indigo-700 transition-all duration-200">
-                  <Calendar className="w-4 h-4" />
-                  <span>Agendar Llamada</span>
+                  <span>Ingresar</span>
                 </button>
               </div>
             </div>

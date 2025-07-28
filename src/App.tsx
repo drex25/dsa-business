@@ -9,8 +9,6 @@ import Blog from './components/Blog';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import ClientPortal from './components/ClientPortal';
-import SubscriptionPlans from './components/SubscriptionPlans';
-import AdvancedFeatures from './components/AdvancedFeatures';
 
 function App() {
   const [activeSection, setActiveSection] = useState('home');
@@ -34,20 +32,11 @@ function App() {
         <section id="about">
           <About />
         </section>
-        <section id="packages">
-          <Packages />
-        </section>
         <section id="testimonials">
           <Testimonials />
         </section>
         <section id="blog">
           <Blog />
-        </section>
-        <section id="subscriptions">
-          <SubscriptionPlans />
-        </section>
-        <section id="advanced-features">
-          <AdvancedFeatures />
         </section>
         <section id="contact">
           <Contact />

@@ -29,7 +29,7 @@ const Services: React.FC = () => {
     },
     {
       icon: TrendingUp,
-      title: 'Paid Media & Performance',
+      title: 'Marketing de Rendimiento',
       subtitle: 'Publicidad que genera ROI real',
       description: 'Campañas publicitarias optimizadas en Google Ads, Facebook e Instagram que maximizan tu retorno de inversión.',
       features: ['Gestión de campañas', 'Optimización continua', 'Reportes detallados', 'Escalamiento rentable'],
