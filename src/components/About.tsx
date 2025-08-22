@@ -6,20 +6,20 @@ const About: React.FC = () => {
     {
       name: 'Diego Alvarenga',
       role: 'CEO - Estratega de negocios',
-      image: 'https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=400',
-      bio: 'Lic. en Administración + MBA. Experto en diagnóstico empresarial, planificación estratégica y desarrollo comercial'
+      image: '/src/assets/diego.jpeg',
+      bio: 'Lic. en Administración + MBA. Ayuda a negocios a pasar del caos a la claridad.'
     },
     {
       name: 'Sylvain Drexler W.',
       role: 'Desarrollador Fullstack',
-      image: 'https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=400',
-      bio: 'Portfolio tech sólido. Responsable de convertir ideas en plataformas digitales funcionales y escalables.'
+      image: '/src/assets/Drex.jpeg',
+      bio: 'Construye webs que funcionan, venden y crecen con vos.'
     },
     {
-      name: 'Romina Alvarenga',
-      role: 'Especialista en Paid Media & Performance',
+      name: 'Romina',
+      role: 'Paid Media',
       image: 'https://images.pexels.com/photos/3756679/pexels-photo-3756679.jpeg?auto=compress&cs=tinysrgb&w=400',
-      bio: 'Mente analítica y creativa. Optimiza campañas para convertir visitas en resultados medibles.'
+      bio: 'Convierte clics en resultados reales. Nada de “likes vacíos”.'
     }
   ];
 
@@ -60,8 +60,7 @@ const About: React.FC = () => {
             </span>
           </h2>
           <p className="text-xl text-slate-600 max-w-3xl mx-auto">
-            Somos un equipo de especialistas apasionados por transformar ideas en resultados. 
-            Creemos que cada negocio tiene potencial de crecimiento, solo necesita la estrategia correcta.
+            Somos un equipo que transforma ideas en resultados. Vivimos lo mismo que vos: vender sin saber si ganamos, trabajar mucho sin ver los frutos, crecer sin orden.Por eso creamos el Método DSA360: un sistema claro, práctico y medible para transformar negocios desde adentro.
           </p>
         </div>
 
@@ -73,17 +72,18 @@ const About: React.FC = () => {
             </h3>
             <div className="space-y-4 text-lg text-slate-700 leading-relaxed">
               <p>
-                DSA Business nació de una simple observación: demasiados negocios no conocen su situación actual, falta de orden en sus finanzas y falta de planificación estratégica para crecer de forma ordenada.
+              Muchos negocios no saben realmente dónde están parados. Falta información, sobran suposiciones.Creamos DSA BUSINESS para cambiar eso: con diagnóstico, estrategia y acción.
               </p>
               <p>
-                Decidimos cambiar eso. Creamos una metodología que va <strong>del análisis a la acción</strong>, con el Método DSA360 donde cada modulo permite entender y acompañamos con estrategias adecuadas basados en datos reales y cada implementación se mide.
+              DSA Business nació de una simple observación: demasiados negocios no conocen su situación actual, falta de orden en sus finanzas y falta de planificación estratégica para crecer de forma ordenada.
+              Decidimos cambiar eso.  Creamos una metodología que va <strong>del análisis a la acción</strong>, con el Método DSA360 donde cada modulo permite entender y acompañamos con estrategias adecuadas basados en datos reales y cada implementación se mide.
               </p>
               <p>
                 Hoy ayudamos a emprendedores y empresas a crecer, con la misma pasión de contribuir al éxito: transformamos negocios a través del poder del diagnóstico como primer paso, implementando estrategias para lograr resultados y brindamos soportes innovadores para crecer en ventas.
               </p>
             </div>
           </div>
-          
+
           <div className="relative">
             <div className="bg-gradient-to-br from-blue-100 to-indigo-100 rounded-3xl p-8">
               <div className="grid grid-cols-2 gap-6">
@@ -95,7 +95,7 @@ const About: React.FC = () => {
                 ))}
               </div>
             </div>
-            
+
             {/* Floating icons */}
             <div className="absolute -top-4 -right-4 w-12 h-12 bg-emerald-500 rounded-xl flex items-center justify-center shadow-lg">
               <Award className="w-6 h-6 text-white" />
@@ -152,8 +152,7 @@ const About: React.FC = () => {
         <div className="bg-gradient-to-r from-slate-900 to-blue-900 rounded-3xl p-12 text-white text-center">
           <h3 className="text-3xl font-bold mb-4">Presencia regional</h3>
           <p className="text-xl text-slate-300 mb-8 max-w-3xl mx-auto">
-            Trabajamos con una red de colaboradores especializados en toda Latinoamérica, 
-            lo que nos permite ofrecer servicios localizados con estándares internacionales.
+          Trabajamos con empresas reales que quieren resultados reales.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             {['Argentina', 'Chile', 'Uruguay', 'Paraguay', 'Bolivia', 'Perú'].map((country, index) => (

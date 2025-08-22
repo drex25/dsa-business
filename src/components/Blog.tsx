@@ -154,8 +154,8 @@ const Blog: React.FC = () => {
             </div>
             <h3 className="text-3xl font-bold mb-4">DSA Insights Newsletter</h3>
             <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
-              Recibí cada miércoles estrategias, cases studies y tips exclusivos para hacer crecer tu negocio digital. 
-              <strong> +2,500 emprendedores ya están suscritos.</strong>
+            Guías, consejos y casos reales para mejorar tu negocio sin fórmulas mágicas.
+              <strong>  Sumate al newsletter semanal con +2.500 emprendedores.</strong>
             </p>
             <div className="flex flex-col sm:flex-row max-w-md mx-auto gap-4">
               <input

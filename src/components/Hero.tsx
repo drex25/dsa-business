@@ -133,7 +133,7 @@ const Hero: React.FC = () => {
                   
                   <div className="mt-6 text-center">
                     <p className="text-sm text-slate-300">
-                      ✓ Análisis gratuito ✓ Sin compromiso ✓ Respuesta en 24hs
+                      ✓ Costo accesible ✓ Personalizado ✓ En menos de 24hs
                     </p>
                   </div>
                 </div>
